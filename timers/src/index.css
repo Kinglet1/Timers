@@ -1,7 +1,18 @@
+@import 'react-toolbox/lib/colors.css';
+@import 'react-toolbox/lib/variables.css';
+
+:root {
+	--colorRed: red;
+}
+
+html {
+	font-size: 10px;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  --colorRed: red;
-	background: var(--colorRed);
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: var(--color-primary);
+	font-size: 3rem;
 }
