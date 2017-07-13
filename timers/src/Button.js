@@ -6,17 +6,11 @@ const classes = classNames.bind(style);
 
 
 class Wrapper extends Component {
-
-
 	render() {
 		const { size, theme, className } = this.props;
 
 		return (
-			<div className={classes(
-				style.button,
-				style[size && `_size_${size}`],
-				style[theme && `_theme_${theme}`],
-				className)}>
+			<div className={classes(style.button, style[`_size_${size}`], style[`_theme_${theme}`], className)}>
 				<span className={style.__text}>Button</span>
 			</div>
 		);
