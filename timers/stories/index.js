@@ -14,4 +14,7 @@ import MyButton from '../src/Button';
 //  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
 //  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
 
-storiesOf('MyButton', module).add('medium primary button', () => <MyButton size={'medium'} theme={'primary'} />);
+storiesOf('MyButton', module)
+	.add('medium primary button', () => <MyButton size={'medium'} theme={'primary'} />)
+	.add('big primary button', () => <MyButton size={'big'} theme={'primary'} />)
+	.add('small primary button', () => <MyButton size={'small'} theme={'primary'} />);
